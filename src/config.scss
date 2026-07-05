@@ -1,13 +1,27 @@
 // ----------------------------------------------------------
 // Config
 // ----------------------------------------------------------
-$root-tokens:  ':where(html)' !default;
+$root-tokens: ':where(html)' !default;
 $custom-icons: () !default;
+$icon-colors: () !default;
+
+@mixin icon-mask {
+  display: inline-block;
+  content: "";
+  block-size: var(--ico-xy, 1em);
+  inline-size: var(--ico-xy, 1em);  
+  vertical-align: var(--ico-va, -.115em);
+  background-color: var(--ico, CurrentColor);
+  mask: var(--svg) no-repeat;
+  opacity: var(--ico-op, 1);
+}
 
 // ----------------------------------------------------------
-// Tokens
+// Default icons
 // ----------------------------------------------------------
-$enable-custom-icon-tokens:       true !default;
+$enable-default-icon-tokens:      true !default; // disables all (default only)
+$enable-default-icon-classes:     true !default; // disables all (default only)
+
 $enable-basic-icon-tokens:        true !default;
 $enable-scheme-icon-tokens:       true !default;
 $enable-extended-icon-tokens:     true !default;
@@ -17,11 +31,6 @@ $enable-circles-icon-tokens:      true !default;
 $enable-social-icon-tokens:       true !default;
 $enable-developer-icon-tokens:    true !default;
 
-// ----------------------------------------------------------
-// Utility classes
-// If tokens are disabled url() data is used for icon values.
-// ----------------------------------------------------------
-$enable-custom-icon-classes:      true !default;
 $enable-basic-icon-classes:       true !default;
 $enable-scheme-icon-classes:      true !default;
 $enable-extended-icon-classes:    true !default;
@@ -30,6 +39,12 @@ $enable-boxes-icon-classes:       true !default;
 $enable-circles-icon-classes:     true !default;
 $enable-social-icon-classes:      true !default;
 $enable-developer-icon-classes:   true !default;
+
+// ----------------------------------------------------------
+// Custom icons
+// ----------------------------------------------------------
+$enable-custom-icon-tokens:       true !default;
+$enable-custom-icon-classes:      true !default;
 
 // ----------------------------------------------------------
 // Basic
