@@ -1,4 +1,4 @@
-/*! icons.css v1.0.1 - Copyright (c) 2026 Phil Brown - MIT license (https://github.com/pmbrown/icons/blob/main/LICENSE) */
+/*! icons.css v1.0.2 - Copyright (c) 2026 Phil Brown - MIT license (https://github.com/pmbrown/icons/blob/main/LICENSE) */
 :where(html) {
   --bars-ico: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='m2 2v2h12v-2h-12zm0 5v2h12v-2h-12zm0 5v2h12v-2h-12z'/></svg>");
   --close-ico: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='m2.47 3.53 1.06-1.06 4.47 4.47 4.47-4.47 1.06 1.06-4.47 4.47 4.47 4.47-1.06 1.06-4.47-4.47-4.47 4.47-1.06-1.06 4.47-4.47z'/></svg>");
